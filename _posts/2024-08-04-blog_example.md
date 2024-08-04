@@ -33,7 +33,6 @@ Alternatively, use esc then tab to move to the next interactive element on the p
 
 
 ```
-python
 import sys
 input = sys.stdin.readline
 
@@ -48,8 +47,9 @@ for i in range(1, n+1):
 print(dp[-1])
 
 #11052과 마찬가지로 dp배열과 pack배열을 따로 두고 하나는 누적하는 용도로 하나는 추가하는 용도로 사용
+```
+코드 넣기 전과 후에 ```를 넣고 코드 넣기 전에 코드 작성 언어를 넣어주면 된다.
 
 
-1.아아니ㅏ러
 
 
