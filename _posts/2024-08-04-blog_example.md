@@ -71,7 +71,9 @@ width=600으로 바꿨을 때의 이미지이다.
 
 예시
 
-![example](https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20151005_75%2Fyymopen1_1444031401649goqzD_JPEG%2F%25B7%25D4%25B5%25A5%25B8%25AE%25BE%25C6.JPG&type=sc960_832)
+![example](https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA5MjNfMjEz%2FMDAxNjAwODI0NDQ1MjA4.CdeKN46wqiJiH5AKk6xFWynLmZFFS7fZB7gW2Ok2NfEg.iwICis3OIrb-5qawNx9PC1gMwneqL7AzYjvDQQEnAOkg.PNG.meetple%2Fe6wR4WnZXR.png&type=sc960_832)
+
+
 
 
 
