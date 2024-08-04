@@ -11,9 +11,9 @@ This is a subtitle
 ----
 부제목을 쓰고 아래 줄에 ---를 써주면 된다. -의 갯수는 상관 없다.
 
-# This is a H1. Use control+Shift+m to toggle the tab key moving focus.
+#### This is a H1. Use control+Shift+m to toggle the tab key moving focus.
 
-Alternatively, use esc then tab to move to the next interactive element on the page.
+##### Alternatively, use esc then tab to move to the next interactive element on the page.
 #하나가 글씨 크기가 가장 크고 #의 수가 늘어날수록 
 ## This is a H2
 ### This is a H3
@@ -52,9 +52,28 @@ print(dp[-1])
 
 
 #### 마크다운 이미지 넣는 법
+
+1. **내 컴퓨터에 있는 이미지의 경우**
 내 컴퓨터에 있는 이미지의 경우 복사/붙여넣기 하면 되는 듯 하다.
+
 <img width="897" alt="스크린샷 2023-10-02 090633" src="https://github.com/user-attachments/assets/6bd59db8-a1c6-4b87-9c52-e72340af7251">
+코드에서 width='897'이라고 되어있는 부분이 크기를 나타낸다.
+
 
 <img width="600" alt="스크린샷 2023-10-02 090633" src="https://github.com/user-attachments/assets/c83defa8-ad3b-4bbc-9de5-4efccd859a80">
+
+width=600으로 바꿨을 때의 이미지이다.
+
+2. **사이트에서 이미지를 가져올 경우**
+
+![텍스트](링크주소)와 같은 양식으로 써준다.
+
+예시
+
+![example](https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2F20151005_75%2Fyymopen1_1444031401649goqzD_JPEG%2F%25B7%25D4%25B5%25A5%25B8%25AE%25BE%25C6.JPG&type=sc960_832)
+
+
+
+
 
 
