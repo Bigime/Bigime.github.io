@@ -79,7 +79,7 @@ width=600으로 바꿨을 때의 이미지이다.
 ```
 <img src="이미지 URL" width="가로 사이즈" height="세로 사이즈">
 
-'''
+```
 
 예시
 <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA5MjNfMjEz%2FMDAxNjAwODI0NDQ1MjA4.CdeKN46wqiJiH5AKk6xFWynLmZFFS7fZB7gW2Ok2NfEg.iwICis3OIrb-5qawNx9PC1gMwneqL7AzYjvDQQEnAOkg.PNG.meetple%2Fe6wR4WnZXR.png&type=sc960_832" width="300" height="400">
