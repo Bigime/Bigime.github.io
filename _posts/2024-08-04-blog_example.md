@@ -57,6 +57,7 @@ print(dp[-1])
 내 컴퓨터에 있는 이미지의 경우 복사/붙여넣기 하면 되는 듯 하다.
 
 <img width="897" alt="스크린샷 2023-10-02 090633" src="https://github.com/user-attachments/assets/6bd59db8-a1c6-4b87-9c52-e72340af7251">
+
 코드에서 width='897'이라고 되어있는 부분이 크기를 나타낸다.
 
 
