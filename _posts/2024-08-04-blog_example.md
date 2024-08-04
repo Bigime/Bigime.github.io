@@ -51,6 +51,10 @@ print(dp[-1])
 코드 넣기 전과 후에 ```를 넣어주고 해당 코드를 사이에 넣어주면 된다.
 
 
-
+#### 마크다운 이미지 넣는 법
+내 컴퓨터에 있는 이미지의 경우 복사/붙여넣기 하면 되는 듯 하다.
 <img width="897" alt="스크린샷 2023-10-02 090633" src="https://github.com/user-attachments/assets/6bd59db8-a1c6-4b87-9c52-e72340af7251">
+
+<img width="600" alt="스크린샷 2023-10-02 090633" src="https://github.com/user-attachments/assets/c83defa8-ad3b-4bbc-9de5-4efccd859a80">
+
 
