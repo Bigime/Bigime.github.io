@@ -5,11 +5,11 @@ title:  "Practicing markdown"
 
 This is a title
 ===
-가장 큰 제목을 담당한다.
+제목을 쓰고 아래줄에 ===를 써주면 된다. =의 갯수는 상관 없다.
 
 This is a subtitle 
 ----
-부제목이라고 생각하면 된다.
+부제목을 쓰고 아래 줄에 ---를 써주면 된다. -의 갯수는 상관 없다.
 
 # This is a H1. Use control+Shift+m to toggle the tab key moving focus.
 
@@ -48,8 +48,9 @@ print(dp[-1])
 
 #11052과 마찬가지로 dp배열과 pack배열을 따로 두고 하나는 누적하는 용도로 하나는 추가하는 용도로 사용
 ```
-코드 넣기 전과 후에 ```를 넣고 코드 넣기 전에 코드 작성 언어를 넣어주면 된다.
+코드 넣기 전과 후에 ```를 넣어주고 해당 코드를 사이에 넣어주면 된다.
 
 
 
+<img width="897" alt="스크린샷 2023-10-02 090633" src="https://github.com/user-attachments/assets/6bd59db8-a1c6-4b87-9c52-e72340af7251">
 
