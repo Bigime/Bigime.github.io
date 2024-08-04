@@ -85,7 +85,14 @@ width=600으로 바꿨을 때의 이미지이다.
 <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA5MjNfMjEz%2FMDAxNjAwODI0NDQ1MjA4.CdeKN46wqiJiH5AKk6xFWynLmZFFS7fZB7gW2Ok2NfEg.iwICis3OIrb-5qawNx9PC1gMwneqL7AzYjvDQQEnAOkg.PNG.meetple%2Fe6wR4WnZXR.png&type=sc960_832" width="300" height="400">
 
 
+width='300', height='400'으로 설정했다.
 
 
+#### 표 삽입 방법
+
+표위에 빈줄 하나가 있어야 한다.
+
+|제목|제목|
+|내용내용|내용내용|
 
 
