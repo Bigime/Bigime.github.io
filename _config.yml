@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "가보자"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Bigime"
 description              : "An amazing website."
 url                      : "https://Bigime.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
