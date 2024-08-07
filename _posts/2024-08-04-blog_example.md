@@ -59,9 +59,9 @@ print(dp[-1])
 <img width="897" alt="스크린샷 2023-10-02 090633" src="https://github.com/user-attachments/assets/6bd59db8-a1c6-4b87-9c52-e72340af7251">
 
 만약에 사이즈를 바꾸고 싶다면 다음 양식을 따른다.
-'''
+```
 <img width="897" alt="스크린샷 2023-10-02 090633" src="https://github.com/user-attachments/assets/6bd59db8-a1c6-4b87-9c52-e72340af7251">
-'''
+```
 
 코드에서 width='897'이라고 되어있는 부분이 크기를 나타낸다.
 
