@@ -62,6 +62,78 @@ interim_project안에 새로운 파일(예시.py)을 하나 추가하고 난 뒤
 
 <img src="https://github.com/user-attachments/assets/a88b4adf-1ae9-44e4-a4b8-908e2e3a4188" width="500" height="300">
 
+- ## 깃허브에 예전 버전으로 수정하는 방법
+
+* git log를 통해 log기록을 확인해보자. git log에서 빠져나오기 위해선 q를 입력하면 된다.
+
+<img src="https://github.com/user-attachments/assets/32bab31b-c920-4016-89ee-6ebfc6aa5ae0" width="500" height="300">
+
+* 만약에 log기록에서 특정 부분으로 돌아가고 싶다면 git reset hard -- "commit 번호"으로 특정 부분으로 돌아갈 수 있다.
+
+<img src="https://github.com/user-attachments/assets/aeb9e68c-c11e-47d1-9e15-167c2cb50f7d" width="500" height="300">
+
+* 그러면 로컬 리포지토리에 저장된 텍스트가 이전 버전으로 돌아간 것을 확인할 수 있다.
+
+* 깃허브 저장소에는 반영이 안 되어있는 것을 확인할 수 있는데 로컬 리포지토리와 동기화 하고 싶다면 git push -f를 통해 가능하다.
+
+<img src="https://github.com/user-attachments/assets/8e160e5f-b944-4f87-a109-c4e2ac4103c6" width="500" height="300">
+
+
+- ## 깃허브 commit내역 수정하는 방법
+
+* 다시 하나의 파일(예시.py)을 만들어  깃허브에 저장해보자
+
+* commit 메세지를 수정하고싶다면 git --amend를 실행시킨 뒤에 a를 눌러 수정모드로 전환한다.
+
+* 수정하고 싶은 부분을 수정한 뒤에 esc버튼으르 누른 뒤 :wq!를 누르면 자동으로 commit내역이 수정된다.
+
+- ## 깃허브 branch 개요
+
+<img src="https://github.com/user-attachments/assets/ef43e260-5bdb-4a1f-ada2-2c97ca9aa18a" width="500" height="300">
+
+* 위의 그림처럼 Develop branch와 bug fix branch를 통해 master branch를 안정적으로 유지시킬 수 있다.
+
+* git branch에 develop branch를 추가하고 싶다면 다음과 같다.
+
+<img src="https://github.com/user-attachments/assets/351aa47d-1156-4678-b3dc-206e6bda198d" width="500" height="300">
+
+* develop branch를 가리키고 싶다면 checkout을 이용한다.
+
+<img src="https://github.com/user-attachments/assets/7a6b264f-cba7-43e4-aef9-a60ebb8f56a6" width="500" height="300">
+
+*develop branch를 가리킨 상태에서 git add .를 통해 수정사항을 반영하면 main branch는 변화가 없고 develop branch만 변한 걸 알 수가 있다.
+
+<img src="https://github.com/user-attachments/assets/d370b598-ec75-4d27-9de6-7974e030513d" width="500" height="300">
+
+*만약에 branch를 제거하고 싶다면 다음과 같다.
+
+<img src="https://github.com/user-attachments/assets/24079f7f-711e-47e3-967e-6c9df3016a37" width="500" height="300">
+
+- ## git branch가 서로 충돌할 경우 해결방법
+
+* main branch와 develop branch에 각각 코드를 추가하여 서로 충돌할 수 있도록 만들자.
+
+* merge를 통해 이를 합치려고 하면 오류가 발생한다.
+
+<img src="https://github.com/user-attachments/assets/ffd80070-103d-4e8e-ac33-a487a22c4c48" width="500" height="300">
+
+* 실제 예시.py에 들어가보면 충돌이 발생한 부분이 명시되어있다.
+
+<img src="https://github.com/user-attachments/assets/909c52b7-2379-4ba1-bfef-acc4a6358a2e" width="500" height="300">
+
+* 둘 중 하나를 지우고 하나를 선택하여 다시 저장하면 된다.
+* 이후에 git merge develop을 통해 merge가 되었는지 확인하고 push를 통해 깃허브에 올리면 된다.
+
+  
+
+
+
+
+
+
+
+
+
 
 
 
