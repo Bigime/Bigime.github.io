@@ -101,11 +101,11 @@ interim_project안에 새로운 파일(예시.py)을 하나 추가하고 난 뒤
 
 <img src="https://github.com/user-attachments/assets/7a6b264f-cba7-43e4-aef9-a60ebb8f56a6" width="500" height="300">
 
-*develop branch를 가리킨 상태에서 git add .를 통해 수정사항을 반영하면 main branch는 변화가 없고 develop branch만 변한 걸 알 수가 있다.
+* develop branch를 가리킨 상태에서 git add .를 통해 수정사항을 반영하면 main branch는 변화가 없고 develop branch만 변한 걸 알 수가 있다.
 
 <img src="https://github.com/user-attachments/assets/d370b598-ec75-4d27-9de6-7974e030513d" width="500" height="300">
 
-*만약에 branch를 제거하고 싶다면 다음과 같다.
+* 만약에 branch를 제거하고 싶다면 다음과 같다.
 
 <img src="https://github.com/user-attachments/assets/24079f7f-711e-47e3-967e-6c9df3016a37" width="500" height="300">
 
