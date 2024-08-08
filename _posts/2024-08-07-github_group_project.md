@@ -1,7 +1,7 @@
 #  title : 깃허브 협업프로젝트 하는 법
 
 
-1. ## 로컬리포지토리에 있는 파일을 깃허브에 올리는 법
+## 1. 로컬리포지토리에 있는 파일을 깃허브에 올리는 법
 
 * 로컬디스크에 새로운 폴더를 만들고 안에 작업물을 넣는다.
 * git clone '협업프로젝트를 진행하는 리포지토리 주소'를 넣는다.
@@ -19,15 +19,15 @@
 <img src="https://github.com/user-attachments/assets/c94d2707-05e4-46d5-bf66-7953fe3809db" width="500" height="300">
 
 
-2. # 깃허브에 올린 파일을 로컬리포지토리에 옮기는 법
+## 2. 깃허브에 올린 파일을 로컬리포지토리에 옮기는 법
 
 * 현재까지 배운 내용은 나의 작업물을 깃허브 협업프로젝트 하는 리포지토리에 옮기는 일이었다.
 
 <img src="https://github.com/user-attachments/assets/5cbbd7c8-fef2-4f32-9fbc-2b99241c3e4c" width="500" height="300">
 
-이제 반대로 깃허브에 올려진 파일을 로컬리포지토리에 옮겨보자
+* 이제 반대로 깃허브에 올려진 파일을 로컬리포지토리에 옮겨보자
 
-위의 그림에서 git fetch와 git merge를 수행해서 로컬리포지토리에 옮기는데 git pull을 통해 두가지 기능을 한 번에 진행할 수 있다.
+* 위의 그림에서 git fetch와 git merge를 수행해서 로컬리포지토리에 옮기는데 git pull을 통해 두가지 기능을 한 번에 진행할 수 있다.
 
 * 예시를 들기 위해 로컬디스크에 또다른 새로운 폴더 Education1이라는 폴더를 만든다. 이후에 git clone '깃허브_리포지토리 주소'를 통해 Education1폴더 안으로 복사한다.
 
@@ -42,7 +42,7 @@ interim_project안에 새로운 파일(예시.py)을 하나 추가하고 난 뒤
 
 <img src="https://github.com/user-attachments/assets/6f422c9e-cab6-4af0-a82c-c225dacd3d24" width="500" height="300">
 
-3. # 깃허브에 올린 파일 수정하는 법
+## 3. 깃허브에 올린 파일 수정하는 법
 
 * 예시를 들기 위해 예시.py를 깃허브에 올린다.
 
