@@ -10,11 +10,11 @@
 <img src="https://github.com/user-attachments/assets/4e86776a-178f-4687-ab07-458f10e2f48b" width="500" height="300">
 
 * git add "해당 작업물 이름"의 형태로 github에 해당 작업물을 저장한다.
-*git commit -m "Add text File [document.txt]"라고 commit 명령어를 통해 변경사항을 깃허브에 히스토리로 기록해준다.
+* git commit -m "Add text File [document.txt]"라고 commit 명령어를 통해 변경사항을 깃허브에 히스토리로 기록해준다.
 
 <img src="https://github.com/user-attachments/assets/2494d5bb-b8ee-45ce-b316-f973e2b42793" width="500" height="300">
 
-*git push를 통해 github에 작업물을 올린다.
+* git push를 통해 github에 작업물을 올린다.
 
 <img src="https://github.com/user-attachments/assets/c94d2707-05e4-46d5-bf66-7953fe3809db" width="500" height="300">
 
