@@ -9,6 +9,7 @@ title:  "Association Rule Mining 1탄"
 여기서 아이템의 수량은 고려하지 않음
 
 예시)
+
 |transaction_id|Bread|Milk|Cola|Zzanggu|
 |---|---|---|---|---|
 |1|1|0|0|1|
@@ -27,6 +28,7 @@ title:  "Association Rule Mining 1탄"
 ### 1. 지지도(support)
 
 특정 아이템이 얼마나 구매되었는가를 판단 = P(X)
+
 |transaction_id|Bread|Milk|Cola|Zzanggu|
 |---|---|---|---|---|
 |1|1|0|0|1|
