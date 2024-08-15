@@ -41,6 +41,7 @@ title:  "Association Rule Mining 1탄"
 ### 2. 신뢰도(confidence)
 
 특정 아이템을 구매했을 때 어떤 아이템을 구매할 확률(즉, 특정 아이템(X)을 구매했을 때의 구매내역을 모두 보고난 뒤에 그 중에서 어떤 아이템(Y)를 얼마나 구매했는가)
+
 |transaction_id|Bread|Milk|Cola|Zzanggu|
 |---|---|---|---|---|
 |1|1|0|0|1|
