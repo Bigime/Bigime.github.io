@@ -2,7 +2,7 @@
 
 1. 트랜스포머 다운받기
    ```
-   pip install transformers
+pip install transformers
    ```
 
 ![image](https://github.com/user-attachments/assets/958f3c29-f484-486a-85eb-0dc50aabcb0c)
