@@ -1,15 +1,17 @@
 ## pre-training된 모델로 예시 만들기
 
 1. 트랜스포머 다운받기
-   ```
+```
 pip install transformers
-   ```
+```
 
 ![image](https://github.com/user-attachments/assets/958f3c29-f484-486a-85eb-0dc50aabcb0c)
 
 2. 토크나이저와 gpt2 모델 가져오기
    
-   ```from transformers import GPT2LMHeadModel,PreTrainedTokenizerFast```
+```
+from transformers import GPT2LMHeadModel,PreTrainedTokenizerFast
+```
 
 3. 토크나이저 불러와서 사용자 지정 토큰 추가하기
 
