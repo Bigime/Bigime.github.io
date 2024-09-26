@@ -210,9 +210,7 @@ with torch.no_grad():
           #서사구조 자른 문장 conversation_history에 저장
           conversation_history.append(q2+generated)
           #print(conversation_history)
-
-
-          ```
+```
 
 
 
