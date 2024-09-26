@@ -75,7 +75,7 @@ import torch
 from transformers import PreTrainedTokenizerFast, GPT2LMHeadModel
 import re
 
-# 토큰들과 토크나이저 설정
+#토큰들과 토크나이저 설정
 Q_TKN = "<usr>"
 A_TKN = "<sys>"
 SENT = "<unused1>"
