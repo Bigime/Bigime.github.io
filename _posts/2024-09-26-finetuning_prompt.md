@@ -91,14 +91,14 @@ koGPT2_TOKENIZER = PreTrainedTokenizerFast.from_pretrained(
     mask_token="<unused0>",
 )
 
-# 토크나이저에 새로운 토큰 추가
-# 등장인물들 새로운 토큰으로 추가하여 예외적으로 등장인물이 잘려서 토큰화되지 않도록 함
+#토크나이저에 새로운 토큰 추가
+#등장인물들 새로운 토큰으로 추가하여 예외적으로 등장인물이 잘려서 토큰화되지 않도록 함
 
 koGPT2_TOKENIZER.add_tokens(charList)
 
 
-# Load your trained model
-# resize_token_embeddings를 명시해줘야 제대로 작동
+#Load your trained model
+#resize_token_embeddings를 명시해줘야 제대로 작동
 model_path = "/content/drive/MyDrive/deepdaivproject/only_stage/storymaker_model.pth" # Adjust the path to your saved model
 model = GPT2LMHeadModel.from_pretrained("skt/kogpt2-base-v2")
 model.resize_token_embeddings(len(koGPT2_TOKENIZER))
@@ -109,19 +109,19 @@ checkpoint = torch.load(model_path)
 model.load_state_dict(checkpoint["model_state_dict"],strict=False)
 model.eval()
 
-# Interaction loop with the chatbot
+#Interaction loop with the chatbot
 end = False
 with torch.no_grad():
     conversation_history = []
     num=0
     while not end:
-        # if문은 처음 사용자가 문장을 입력했을 때
+        #if문은 처음 사용자가 문장을 입력했을 때
         if num==0:
           q = input("user > ").strip()
           if q == "quit":
               break
           #사용자가 감정+대사 또는 서술 순으로 작성하기 때문에 학습한 패턴대로 토큰을 넣어주기
-          #위해서 문장을 쪼갬
+          위해서 문장을 쪼갬
           q1 = q[0:2]
           q2 = q[3:]
           #학습했던 토큰의 순서대로 넣어줌
@@ -136,26 +136,26 @@ with torch.no_grad():
           generated = koGPT2_TOKENIZER.decode(gen_ids[0],)
           #print(generated)
 
-          # <sys>와 </s> 사이의 텍스트 추출
+          #<sys>와 </s> 사이의 텍스트 추출
           result = re.search(r"<sys>(.*?)</s>", generated)
            # 결과 출력
           if result:
                 generated = result.group(1).strip()
-                # <sys>와 </s> 사이의 텍스트만 추출하고 공백 제거
+                #<sys>와 </s> 사이의 텍스트만 추출하고 공백 제거
           else:
                 print("해당 패턴을 찾을 수 없습니다.")
 
           #print(generated)
-          # 1. 불필요한 태그 제거 (<unused1>, <sys>, </s> 등)
+          #1. 불필요한 태그 제거 (<unused1>, <sys>, </s> 등)
           #cleaned_text = re.sub(r"<unused1>|<sys>|</s>|<usr>|</s>", "",generated)
 
  
-          # 2. 불필요한 공백 제거할려고 했으나 공백이 있는 것이 토큰화에 유리하기 때문에 배제
+          #2. 불필요한 공백 제거할려고 했으나 공백이 있는 것이 토큰화에 유리하기 때문에 배제
           #cleaned_text = cleaned_text.replace(" ", "")
           #print(cleaned_text)
                 
-          # 3 conversation_history에 추가
-          # 사용자가 처음 문장을 입력했을 때에는 이전 문장이 존재하지 않으므로 현재 문장을 추가만 해준다.
+          #3 conversation_history에 추가
+          #사용자가 처음 문장을 입력했을 때에는 이전 문장이 존재하지 않으므로 현재 문장을 추가만 해준다.
           conversation_history.append(generated)
           #conversation_history.append('안녕하세요')
           #print(conversation_history)
@@ -164,7 +164,7 @@ with torch.no_grad():
           print(generated)
           num+=1
        
-        # 사용자가 작성한 문장이 처음이 아닐 때
+        #사용자가 작성한 문장이 처음이 아닐 때
         else:
           q = input("user > ").strip()
           if q == "quit":
@@ -173,7 +173,7 @@ with torch.no_grad():
           q2 = q[3:]
           #print(q1)
           #print(q2)
-          # 바로 이전 문장만 기억하게 할 것이기 때문에 pop 함수 사용해서 꺼내고 conversation_history list는 비어있도록 만듬
+          #바로 이전 문장만 기억하게 할 것이기 때문에 pop 함수 사용해서 꺼내고 conversation_history list는 비어있도록 만듬
           q3 = conversation_history.pop()
           q3 = str(q3)
           q = Q_TKN+q1+SENT+q3+q2+SENT+A_TKN
@@ -187,10 +187,10 @@ with torch.no_grad():
           
           generated = koGPT2_TOKENIZER.decode(gen_ids[0],)
           #print(generated)
-          # <sys>와 </s> 사이의 텍스트 추출
+          #<sys>와 </s> 사이의 텍스트 추출
           result = re.search(r"<sys>(.*)</s>", generated)
 
-          # 결과 출력
+          #결과 출력
           if result:
                 generated = result.group(1).strip()  # <sys>와 </s> 사이의 텍스트만 추출
           else:
@@ -205,9 +205,9 @@ with torch.no_grad():
           a = "Bot > "
           print(a + generated)
 
-          # 서사구조 자르기
+          #서사구조 자르기
           #con_generated = generated[0:2]
-          # 서사구조 자른 문장 conversation_history에 저장
+          #서사구조 자른 문장 conversation_history에 저장
           conversation_history.append(q2+generated)
           #print(conversation_history)
 
