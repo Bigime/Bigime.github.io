@@ -1,3 +1,11 @@
+----
+layout: post
+title: "pre-training된 모델로 예시 만들기"
+categories: ['deepdaiv','ai novel chatbot']
+----
+
+
+
 ## pre-training된 모델로 예시 만들기
 
 1. 트랜스포머 다운받기
