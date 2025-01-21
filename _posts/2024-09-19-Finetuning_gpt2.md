@@ -1,4 +1,17 @@
-## pre-training된 모델로 예시 만들기
+-----
+title: "pre-training된 모델로 예시 만들기"
+categories:
+  -deepdaiv
+tags:
+  -deepdaiv
+layout: categories
+-----
+
+
+
+
+
+
 
 1. 트랜스포머 다운받기
 
